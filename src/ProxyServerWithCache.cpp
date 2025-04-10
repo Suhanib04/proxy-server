@@ -2,7 +2,7 @@
 #include <sstream>
 #include <iostream>
 #include <algorithm>
-
+ 
 bool ProxyRequestParser::parse(const std::string& raw, ParsedRequest& req) {
     std::istringstream stream(raw);
     std::string line;
