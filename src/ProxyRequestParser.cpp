@@ -82,7 +82,7 @@ void ProxyRequestParser::setHeader(ParsedRequest& req, const std::string& key, c
         }
     }
     req.headers.push_back({key, value});
-}
+} 
 
 void ProxyRequestParser::removeHeader(ParsedRequest& req, const std::string& key) {
     req.headers.erase(std::remove_if(req.headers.begin(), req.headers.end(),
